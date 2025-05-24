@@ -1,5 +1,5 @@
 name: stashly
-description: "A new Flutter project."
+description: "Easily store and retrieve bookmarks in a secure and efficient way."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -34,6 +34,23 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+  hugeicons: ^0.0.11
+
+  get: ^5.0.0-release-candidate-9.3.2
+  prf: ^2.4.2
+
+  go_router: ^15.1.1
+  logger: ^2.5.0
+  jiffy: ^6.3.2
+  url_launcher: ^6.3.1
+  package_info_plus: ^8.3.0
+  share_plus: ^11.0.0
+  flutter_animate: ^4.5.2
+  gap: ^3.0.1
+  animated_custom_dropdown: ^3.1.1
+
+  soft_edge_blur: ^0.1.3
+
 
 dev_dependencies:
   flutter_test:
