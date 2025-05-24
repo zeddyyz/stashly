@@ -17,19 +17,19 @@ Generate code, corrections, and refactorings that comply with the basic principl
 
 ## App Features
 
-- Universal Bookmarking: Save links, articles, videos, and any web content from any browser or app.
-- Smart Organization: Use hashtags and folders to group, categorize, and quickly search your stash.
-- Instant Access: Find what you need, when you need it—no more endless scrolling or hunting.
-- Personalization: Customize your folders, favorite important bookmarks, and make Stashly your own.
-- Seamless Sync: Access your bookmarks across all your devices (iOS & Android) for true portability (requires for user to be signed in).
-- Offline Access: View your saved content even without an internet connection (does not require for user to be signed in).
-- Beautiful & Intuitive: Enjoy a sleek, distraction-free interface designed for productivity.
-- Will use freemium model with a one-time payment plan for premium features.
-- Free features:
-  - Maximum of 20 bookmarks
-  - Maximum of 10 favorites
-  - Maximum of 3 folders
-  - Unlimited hashtags
+1. Universal Bookmarking: Save links, articles, videos, and any web content from any browser or app.
+2. Smart Organization: Use hashtags and folders to group, categorize, and quickly search your stash.
+3. Instant Access: Find what you need, when you need it—no more endless scrolling or hunting.
+4. Personalization: Customize your folders, favorite important bookmarks, and make Stashly your own.
+5. Seamless Sync: Access your bookmarks across all your devices (iOS & Android) for true portability (requires for user to be signed in).
+6. Offline Access: View your saved content even without an internet connection (does not require for user to be signed in).
+7. Beautiful & Intuitive: Enjoy a sleek, distraction-free interface designed for productivity.
+8. Will use freemium model with a one-time payment plan for premium features.
+9. Free features:
+   - Maximum of 20 bookmarks
+   - Maximum of 10 favorites
+   - Maximum of 3 folders
+   - Unlimited hashtags
 
 ### Basic Principles
 
