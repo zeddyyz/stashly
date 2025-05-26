@@ -6,13 +6,13 @@ class AppTheme {
   static ThemeData lightThemeData(BuildContext context) {
     return ThemeData(
       colorScheme: ColorScheme.fromSeed(
-        seedColor: const Color(0xFF5142E3), // Primary purple
+        seedColor: const Color(0xFFED8C00), // Primary orange
         brightness: Brightness.light,
       ),
-      useMaterial3: true,
+      scaffoldBackgroundColor: Color.fromARGB(255, 247, 247, 247),
       appBarTheme: AppBarTheme(
         centerTitle: true,
-        backgroundColor: Colors.white,
+        backgroundColor: Color.fromARGB(255, 247, 247, 247),
         elevation: 0,
         foregroundColor: Colors.black,
         titleTextStyle: Theme.of(
@@ -21,6 +21,7 @@ class AppTheme {
       ),
       cardTheme: const CardThemeData(
         elevation: 0.5,
+        color: Colors.white,
         margin: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
@@ -68,13 +69,13 @@ class AppTheme {
   static ThemeData darkThemeData(BuildContext context) {
     return ThemeData(
       colorScheme: ColorScheme.fromSeed(
-        seedColor: const Color(0xFF836FFF), // Lighter purple for dark mode
+        seedColor: const Color(0xFFED8C00), //  orange for dark mode
         brightness: Brightness.dark,
       ),
-      useMaterial3: true,
+      scaffoldBackgroundColor: Color.fromARGB(255, 8, 8, 8),
       appBarTheme: AppBarTheme(
         centerTitle: true,
-        backgroundColor: const Color(0xFF121212),
+        backgroundColor: Color.fromARGB(255, 8, 8, 8),
         elevation: 0,
         foregroundColor: Colors.white,
         titleTextStyle: Theme.of(
@@ -84,7 +85,7 @@ class AppTheme {
       cardTheme: CardThemeData(
         elevation: 0.5,
         margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-        color: Colors.grey.shade900,
+        color: Color.fromARGB(255, 20, 20, 20),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
@@ -125,7 +126,6 @@ class AppTheme {
         type: BottomNavigationBarType.fixed,
         backgroundColor: Color(0xFF121212),
       ),
-      scaffoldBackgroundColor: const Color(0xFF121212),
     );
   }
 }
