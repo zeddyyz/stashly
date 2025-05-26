@@ -10,8 +10,7 @@ Generate code, corrections, and refactorings that comply with the basic principl
 - Include examples where applicable.
 - Maintain consistency in formatting and style throughout the documentation.
 
-- Use Flutter docs for Flutter-specific documentation.
-  - https://docs.flutter.dev/?_gl=1*ltwfks*_up*MQ..*_gs*MQ..*_ga*MTg2MTQ5OTUwMC4xNzQ1MzM5NzAw*_ga_04YGWK0175*MTc0NTMzOTY5OS4xLjAuMTc0NTMzOTY5OS4wLjAuMA..&gclid=Cj0KCQjw_JzABhC2ARIsAPe3ynrN-m4y_J_uakUqSGDmDfZcJSn8YdxqWaSBW_z9-rNJvO8V3rpiTksaAkr3EALw_wcB&gclsrc=aw.ds&gbraid=0AAAAAC-INI_cbM2NcZSMBVu53972Cn_Tg
+- Use Flutter docs for Flutter-specific documentation: https://docs.flutter.dev/?_gl=1*ltwfks*_up*MQ..*_gs*MQ..*_ga*MTg2MTQ5OTUwMC4xNzQ1MzM5NzAw*_ga_04YGWK0175*MTc0NTMzOTY5OS4xLjAuMTc0NTMzOTY5OS4wLjAuMA..&gclid=Cj0KCQjw_JzABhC2ARIsAPe3ynrN-m4y_J_uakUqSGDmDfZcJSn8YdxqWaSBW_z9-rNJvO8V3rpiTksaAkr3EALw_wcB&gclsrc=aw.ds&gbraid=0AAAAAC-INI_cbM2NcZSMBVu53972Cn_Tg
 
 ## Dart General Guidelines
 
@@ -28,8 +27,8 @@ Generate code, corrections, and refactorings that comply with the basic principl
 9. Free features:
    - Maximum of 20 bookmarks
    - Maximum of 10 favorites
-   - Maximum of 3 folders
-   - Unlimited hashtags
+   - Maximum of 5 folders
+   - Maximum of 5 hashtags
 
 ### Basic Principles
 
@@ -136,6 +135,7 @@ Generate code, corrections, and refactorings that comply with the basic principl
 - Use GoRouter to manage routes
   - Use pathParameters to pass data that will be shown in the URL
   - Use extras to pass data between pages
+  - Views should contain a static const String for the route name and route path, and GoRoute declares the path and the view
 - Use extensions to manage reusable code
 - Use ThemeData to manage themes
   - lightThemeData(context) for light theme
@@ -149,3 +149,24 @@ Generate code, corrections, and refactorings that comply with the basic principl
 - Deeply nested widgets can make state management more challenging. By keeping the tree shallow, it becomes easier to manage state and pass data between widgets
 - Break down large widgets into smaller, focused widgets
 - Utilize const constructors wherever possible to reduce rebuilds
+
+## Folder Structure
+
+Within the lib folder, the following structure is recommended:
+
+- components: used for reusable components that can be used across the app
+- config: for any configuration files, such as environment variables or flavor schemes
+- core: for core functionality and services, such as API clients or app wide state management
+  - constants: app constants; separate files for light and dark themes, etc.
+  - controllers: for controllers that manage the app-wide state and business logic of the app
+  - localization: for localization files and translations
+  - services: for services that provide functionality across the app, such as API services, vibration, device info, local storage, network, etc.
+  - utils: for utility functions and helpers that can be used across the app
+- features: for feature-specific code, organized by feature
+  - models: for data models and entities related to the feature
+  - repositories: for data repositories that handle data persistence and retrieval
+  - controllers: for controllers that manage the feature's business logic and state
+  - views: for UI components and screens related to the feature
+  - widgets: for reusable widgets specific to the feature
+- routing: for route management and navigation logic
+  - this can contain folders for analytics, mobile layout, large layout, and web layout if needed
